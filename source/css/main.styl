@@ -1,0 +1,55 @@
+// 变量定义
+$primary-color = #3498db
+$text-color = #333
+$light-gray = #f8f9fa
+
+// 基础样式
+body
+  font-family: 'Helvetica Neue', Arial, sans-serif
+  line-height: 1.6
+  color: $text-color
+  background-color: $light-gray
+
+.container
+  max-width: 800px
+  margin: 0 auto
+  padding: 2rem 1rem
+
+// 导航样式
+.navbar
+  display: flex
+  justify-content: space-between
+  padding: 1.5rem 0
+  border-bottom: 1px solid #eee
+
+  .site-title
+    font-size: 1.8rem
+    font-weight: bold
+    color: $primary-color
+    text-decoration: none
+
+  .menu a
+    margin-left: 1.5rem
+    color: $text-color
+    text-decoration: none
+    &:hover
+      color: $primary-color
+
+// 文章预览
+.post-preview
+  background: white
+  padding: 2rem
+  margin-bottom: 2rem
+  border-radius: 5px
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1)
+
+  h2 a
+    color: $text-color
+    text-decoration: none
+    &:hover
+      color: $primary-color
+
+  .post-meta
+    color: #777
+    font-size: 0.9rem
+    margin: 0.5rem 0

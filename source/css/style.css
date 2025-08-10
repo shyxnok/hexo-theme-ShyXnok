@@ -1,0 +1,212 @@
+
+/* latin */
+
+
+.container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+p{
+  font-family: "Freder";
+  color: #fff;
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-size: 3.5em;
+}
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --grey-0: #fff;
+  --grey-1: #fdfdfd;
+  --grey-2: #f7f7f7;
+  --grey-3: #eff2f3;
+  --grey-4: #ccc;
+  --grey-5: #999;
+  --grey-6: #666;
+  --grey-7: #333;
+  --grey-8: #222;
+  --grey-9: #000;
+  --grey-1-a0: #fdfdfd00;
+  --grey-1-a7: #fdfdfdb3;
+  --grey-1-a5: #fdfdfd80;
+  --grey-1-a3: #fdfdfd4d;
+  --grey-9-a1: #0000001a;
+  --grey-9-a5: #00000080;
+  --grey-2-a0: #f7f7f700;
+}
+
+a {
+  color: currentColor;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  cursor: pointer;
+  border: none;
+  outline: 0;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.item {
+  text-align: center;
+  border-radius: 38%;
+  width: 1.875rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+i:hover {
+  border-bottom-color: blanchedalmond;
+  color: blanchedalmond;
+}
+.item:before {
+  /* background-color: #191717; */
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.twitter::before {
+  background-color: #039cee;
+}
+.item:focus:before,
+.item:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.item:before {
+  background-color: #039cee;
+}
+.icon-twitter {
+  color: #039cee;
+}
+.wechat:before {
+  background-color: #1ccc54;
+}
+.icon-wechat {
+  color: #1ccc54;
+}
+.weibo {
+  color: #e51a1a;
+}
+.weibo:before {
+  background-color: #e51a1a;
+}
+.bilibili {
+  color: #159de6;
+}
+.bilibili::before {
+  background-color: #159de6;
+}
+.telegram {
+  color: #1f7fdf;
+}
+.telegram::before {
+  background-color: #1f7fdf;
+}
+.item:before {
+  content: "";
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: 90%;
+  left: -110%;
+  transform: rotate(45deg);
+}
+.item:hover i {
+  color: #fff;
+  transform: scale(1);
+}
+
+/* 基础样式（移动端默认） */
+.col {
+  width: 100%; /* 移动端单列 */
+  margin-bottom: 1rem;
+}
+
+/* 平板（768px以上）：两列布局 */
+@media (min-width: 768px) {
+  .col {
+    width: 48%; /* 两列各占48%（留间隙） */
+    float: left;
+    margin-right: 2%;
+  }
+  .col:nth-child(2n) {
+    margin-right: 0; /* 偶数列清除右边距 */
+  }
+}
+
+/* 桌面（1200px以上）：三列布局 */
+@media (min-width: 1200px) {
+  .col {
+    width: 31.33%; /* 三列各占31.33% */
+    margin-right: 3%;
+  }
+  .col:nth-child(2n) {
+    margin-right: 3%; /* 覆盖平板样式 */
+  }
+  .col:nth-child(3n) {
+    margin-right: 0; /* 第三列清除右边距 */
+  }
+}
+
+.waves {
+  content-visibility: auto;
+  contain-intrinsic-size: 100vw 15vh;
+  width: 100%;
+  height: 15vh;
+  min-height: 3.125rem;
+  max-height: 9.375rem;
+  margin-bottom: -0.6875rem;
+  position: relative;
+}
+@media (width<=820px) {
+  .waves {
+    contain-intrinsic-size: 100vw 10vh;
+    height: 10vh;
+  }
+}
+.parallax > use {
+  animation: 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite wave;
+}
+use.stop-animation {
+  animation-play-state: paused;
+}
+.parallax > use:first-child {
+  fill: var(--grey-1-a7);
+  animation-duration: 7s;
+  animation-delay: -2s;
+}
+.parallax > use:nth-child(2) {
+  fill: var(--grey-1-a5);
+  animation-duration: 10s;
+  animation-delay: -3s;
+}
+.parallax > use:nth-child(3) {
+  fill: var(--grey-1-a3);
+  animation-duration: 13s;
+  animation-delay: -4s;
+}
+.parallax > use:nth-child(4) {
+  fill: var(--grey-1);
+  animation-duration: 20s;
+  animation-delay: -5s;
+}
+@keyframes wave {
+  0% {
+    transform: translate(-90px);
+  }
+  to {
+    transform: translate(85px);
+  }
+}

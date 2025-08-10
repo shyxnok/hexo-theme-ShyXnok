@@ -1,0 +1,41 @@
+favicon: img/favicon.png
+
+
+menu:
+  Home: /
+  Archives: /archives
+  About: /about
+
+
+social:
+  - name: GitHub
+    icon: icon-github
+    url: https://github.com/yourname
+  - name: Twitter
+    icon: icon-twitter
+    url: https://twitter.com/yourname
+  - name: Weibo
+    icon: icon-weibo
+    url: https://weibo.com/yourname
+  - name: Zhihu
+    icon: icon-zhihu
+    url: https://www.zhihu.com/people/yourname
+  - name: Facebook
+    icon: icon-facebook
+    url: https://www.facebook.com/yourname
+  - name: Bilibili
+    icon: icon-bilibili
+    url: https://space.bilibili.com/yourname
+  
+# 主题颜色
+colors:
+  primary: "#3498db"
+  secondary: "#2ecc71"
+
+# 评论系统
+comments:
+  service: disqus
+  shortname: your-disqus-shortname
+
+#google分析网站数据
+google_analytics: G-HPX8K1TJNR
